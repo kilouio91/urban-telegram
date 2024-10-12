@@ -61,7 +61,8 @@ jobs:
           python run.py -f
 
       -name: Change Directory to WordPress Extracted Plugins
-        run: ls    
+        run: |
+          ls    
 
       - name: Run ripgrep on Linux platforms
         run: |
