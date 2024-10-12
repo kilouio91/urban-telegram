@@ -60,13 +60,13 @@ jobs:
           pip install -r requirements.txt
           python run.py -f
 
-      - name: Change Directory to WordPress Extracted Plugins
-        run: |
-          cd wordpress-plugins/wordpress-plugin-download-main
-
       - name: List Directory
         run: |
           ls    
+          
+      - name: Delete zip file
+        run: rm -rf wordpress-plugins
+
 
       - name: Run ripgrep on Linux platforms
         run: |
