@@ -62,6 +62,10 @@ jobs:
 
       - name: Change Directory to WordPress Extracted Plugins
         run: |
+          cd wordpress-plugins/wordpress-plugin-download-main
+
+      - name: List Directory
+        run: |
           ls    
 
       - name: Run ripgrep on Linux platforms
